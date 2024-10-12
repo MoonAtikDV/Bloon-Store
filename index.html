@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloon Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-left">
+            <h1>Bloon Store</h1>
+        </div>
+        <div class="hero-right">
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </div>
+    </header>
+
+    <!-- Гамбургерное меню -->
+    <div id="side-menu" class="side-menu">
+        <a href="#" onclick="closeMenu()">Настройки</a>
+        <a href="#" onclick="closeMenu()">Инфо</a>
+    </div>
+
+    <!-- Поиск -->
+    <div id="search-bar" class="search-bar">
+        <input type="text" placeholder="Поиск..." id="search-input">
+        <button onclick="searchApps()">Поиск приложений</button>
+    </div>
+
+    <!-- Кнопки Игры и Приложения -->
+    <div id="category-buttons" class="buttons-container">
+        <button class="category-btn" onclick="window.location.href='games.html'">Игры</button>
+        <button class="category-btn" onclick="window.location.href='apps.html'">Приложения</button>
+    </div>
+
+    <!-- Список приложений -->
+    <div id="app-list" class="app-list"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
